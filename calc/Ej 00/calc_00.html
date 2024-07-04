@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Example with calc() in CSS</title>
+<style>
+    .container {
+        width: 90%; /* 80% del ancho del contenedor padre */
+        margin: 0 auto; /* centrar horizontalmente */
+        background-color: lightgray;
+        padding: 20px;
+        overflow:hidden;
+    }
+
+    .box {
+        width: calc(33% - 20px); /* 33% del ancho del contenedor padre, menos 20 píxeles de margen */
+        height: 100px;
+        min-width:100px;
+        background-color: darkcyan;
+        margin: 10px;
+        float: left; /* para que los elementos se coloquen en línea */
+        box-sizing: border-box; /* para incluir el padding y border en el cálculo del ancho */
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
