@@ -1,0 +1,60 @@
+
+<!doctype html>
+<html>
+<head>
+  <title>CSS animations: Example 1</title>
+  <style type="text/css">
+    h1 {
+	width: 290px;
+	border: 1px solid red;
+      -moz-animation-duration: 3s;
+      -webkit-animation-duration: 3s;
+	  -ms-animation-duration: 3s;
+      -moz-animation-name: slidein;
+      -webkit-animation-name: slidein;
+	   -ms-animation-name: slidein;
+    }
+    
+	@keyframes slidein {
+      from {
+        margin-left:80%;
+
+      }
+      
+      to {
+        margin-left:0%;
+
+      }
+    }
+	
+    @-moz-keyframes slidein {
+      from {
+        margin-left:80%;
+       
+      }
+      
+      to {
+        margin-left:0%;
+        
+      }
+    }
+    
+    @-webkit-keyframes slidein {
+      from {
+        margin-left:80%;
+
+      }
+      
+      to {
+        margin-left:0%;
+
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Watch me move</h1>
+  <p>This example shows how to use CSS animations to make <code>H1</code> elements
+  move across the page.</p>
+</body>
+</html>
