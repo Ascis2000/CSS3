@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ejemplo de Variable Personalizada CSS</title>
+<style>
+  /* Definición de la variable personalizada */
+  :root {
+    --color-primario: #3498db; /* Definimos el color primario como azul */
+  }
+
+  /* Estilo de un botón que usa la variable personalizada */
+  .boton {
+    background-color: var(--color-primario); /* Usamos la variable como color de fondo */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  /* Cambiar el color de la variable personalizada para un tema oscuro */
+  .tema-oscuro {
+    --color-primario: #844b9b; /* Cambiamos el color primario a morado */
+  }
+</style>
+</head>
+<body>
+
+<!-- Botón que usa la variable personalizada -->
+<button class="boton">Botón Normal</button>
+
+<!-- Botón con un tema oscuro -->
+<button class="boton tema-oscuro">Botón con Tema Oscuro</button>
+
+</body>
+</html>
